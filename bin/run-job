@@ -67,6 +67,11 @@ case $os_major_version in
         python_lib_dir='/usr/lib/python3.9'
         python='/usr/bin/python3'
         ;;
+    10 )
+        priorities_rpm=
+        python_lib_dir='/usr/lib/python3.12'
+        python='/usr/bin/python3'
+        ;;
     * )
         echo "Could not determine OS major version from '$os_major_version'"
         exit 2
