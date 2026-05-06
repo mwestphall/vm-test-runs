@@ -115,6 +115,10 @@ log_command systemctl is-active NetworkManager
 sleep 45
 log_command journalctl -u NetworkManager --lines 50 --no-pager --no-hostname
 log_command ls -l /var/lib/NetworkManager/
+
+log_command nmcli con show       # lists connection names
+log_command nmcli dev status     # lists interface names (e.g. eth0, ens3)
+
 # ls -l /var/lib/dhclient/  # doesn't exist - no dhclient
 log_command ip addr show  # show again post-restart
 
