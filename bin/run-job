@@ -119,6 +119,7 @@ log_command ls -l /var/lib/NetworkManager/
 log_command nmcli con show       # lists connection names
 log_command nmcli dev status     # lists interface names (e.g. eth0, ens3)
 log_command nmcli con down "Wired connection 1" && nmcli con up "Wired connection 1"
+log_command journalctl --lines 50 -xe NM_DEVICE=ens3
 sleep 30
 
 # ls -l /var/lib/dhclient/  # doesn't exist - no dhclient
