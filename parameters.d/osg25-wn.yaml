@@ -47,8 +47,6 @@ package_sets:
   #### Optional ####
   # selinux - enable SELinux for the package set, otherwise Permissive mode (default: True)
   ##################
-  - label: Worker Node (privileged)
+  - label: curl
     packages:
-      - osg-wn-client
-      - osg-oasis
-      - apptainer-suid
+      - curl
