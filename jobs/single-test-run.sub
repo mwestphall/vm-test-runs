@@ -17,22 +17,6 @@ periodic_remove         = ( (JobStatus == 5) && (HoldReasonCode =?= 3) && (NumJo
 request_disk            = 16GB
 # https://opensciencegrid.atlassian.net/browse/SOFTWARE-6285
 +TestingMachineList     = "\
- e4006.chtc.wisc.edu,\
- e4007.chtc.wisc.edu,\
- e4009.chtc.wisc.edu,\
- e4010.chtc.wisc.edu,\
- e4076.chtc.wisc.edu,\
- e4079.chtc.wisc.edu,\
- e4080.chtc.wisc.edu,\
- e4082.chtc.wisc.edu,\
- e4083.chtc.wisc.edu,\
- e4084.chtc.wisc.edu,\
- e4085.chtc.wisc.edu,\
- e4086.chtc.wisc.edu,\
- e4087.chtc.wisc.edu,\
- e4088.chtc.wisc.edu,\
- e4089.chtc.wisc.edu,\
- e4090.chtc.wisc.edu,\
  e4096.chtc.wisc.edu,\
  arm-e0000.chtc.wisc.edu,\
 "
